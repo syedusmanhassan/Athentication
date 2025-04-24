@@ -25,7 +25,7 @@ const Registration = () => {
     setError(null);
     
     try {
-      const response = await axios.post("http://localhost:3000/registration", {
+      const response = await axios.post("https://athentication-weka.onrender.com/registration", {
         email: formData.email,
         password: formData.password,
       });
