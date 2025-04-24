@@ -13,7 +13,7 @@ const saltRounds = 10;
 
 
 const app = express();
-const port = 3000;
+const port = process.env.Port || 3000;
 
 connectDB();
 app.use(bodyParser.json({ extended: true }));
